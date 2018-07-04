@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saludo por edades</title>
+    <script>
+    function saludo(){
+
+        let edad = document.getElementById("edad").value;
+        edad = parseInt(edad);
+
+        if(edad<18){
+
+            alert("Que hay chaval?");         
+
+        } else if(edad>=18 && edad<30){
+
+            alert("Hola colega"); 
+
+        } else if (edad>=30 && edad<70){  
+
+            alert("Buenos dias");
+
+        } else if (edad>=70){
+            
+             alert("Saludos Maestro"); 
+        }
+    }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="number" placeholder="introduzca su edad" id="edad">
+        <input type="button" value="Salúdame" onclick="saludo()">
+    </form>
+    
+</body>
+</html>
