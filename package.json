@@ -10,11 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/vixu92/Web-JS.git"
   },
-  "keywords": ["Javascript", "ECMAscript"],
+  "keywords": [
+    "Javascript",
+    "ECMAscript"
+  ],
   "author": "Javier R.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vixu92/Web-JS/issues"
   },
-  "homepage": "https://github.com/vixu92/Web-JS#readme"
+  "homepage": "https://github.com/vixu92/Web-JS#readme",
+  "devDependencies": {}
 }
