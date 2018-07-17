@@ -5,29 +5,26 @@ var botonDespido = document.querySelector("#botonDespido");
 var botonBorrar = document.querySelector("#botonBorrar");
 
 botonSaludo.addEventListener('click' , saludar);
-botonDespido.addEventListener('click' , despedir);
-botonBorrar.addEventListener('click' , borrar);
+botonDespido.addEventListener('click' , saludar);
+botonBorrar.addEventListener('click' , saludar);
 
-function saludar(){
+function saludar(evento){
 
     var oNombre = document.querySelector("#nombre").value;
     var parrafoSaludo = document.querySelector("#parrafoSaludo");
-    
-    parrafoSaludo.innerHTML = "Hola " + oNombre;
-}
 
-function despedir(){
-    
-    var oNombre = document.querySelector("#nombre").value;
-    var parrafoSaludo = document.querySelector("#parrafoSaludo");
-    
-    parrafoSaludo.innerHTML = "Adios " + oNombre;
-}
+    if (evento.target.id === 'botonSaludo'){
+        
+        parrafoSaludo.innerHTML = "Hola " + oNombre;
+    }
+    else if(evento.target.id === 'botonDespido'){
 
-function borrar(){
+        parrafoSaludo.innerHTML = "Adios " + oNombre;
+    }
+    else{
 
-    var parrafoSaludo = document.querySelector("#parrafoSaludo"); parrafoSaludo.innerHTML = "";
+        parrafoSaludo.innerHTML = "";
+    }
+    }
 }
-}
-
 document.addEventListener('DOMContentLoaded', app);
