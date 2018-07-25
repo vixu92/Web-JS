@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./google.js"></script>
+    <style>
+        main{
+            width: 100%;
+            text-align: center;
+        }
+        h1 img{
+            width: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto; 
+            margin-bottom: 0;
+        }
+        input[type = "text"]{
+             width: 50%;
+             height: 1.6rem;
+             line-height: 1.5rem;
+             margin-top: 0;
+             margin-bottom: 1rem;
+             box-shadow: 5px 2px 20px grey;
+        }
+        input[type = "button"]{
+             border: 0.5 solid rgb(68, 157, 240);
+             width: 20%;
+        }
+        input[type = "button"]:hover{
+             border: 1 solid rgb(8, 145, 190);
+             font-weight: 600;
+        }
+    </style>
+
+    <title>Google</title>
+</head>
+<body> 
+    <main>
+        <h1><img src="./Google.jpg" alt="Google"></h1>
+
+        <div>
+            <input type="text" id="query">
+        </div>
+        <div>
+            <input type="button" value="Buscar" id="btnBuscar">
+        </div>
+    </main>    
+</body>
+</html>
